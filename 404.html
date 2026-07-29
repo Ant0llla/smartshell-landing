@@ -1,30 +1,51 @@
 <!doctype html>
-<html lang="ru">
+<html lang="ru" class="dark" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#07070c" />
     <meta
       name="description"
-      content="SmartShell — единая система управления компьютерным клубом: карта зала, аналитика, бронирование и Smart Gamer."
-    />
-    <meta property="og:title" content="SmartShell — клуб работает как система" />
-    <meta
-      property="og:description"
-      content="Живая демонстрация SmartShell: от брони игрока до контроля клуба в реальном времени."
+      content="SmartShell — система управления компьютерным клубом. Карта мест, смены, бронирования, платежи, гости, Shell и аналитика в одном интерфейсе."
     />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://smartshell-gg-landing.ant0llla.chatgpt.site/og.png" />
-    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <meta property="og:title" content="SmartShell — управление клубом в одном интерфейсе" />
+    <meta
+      property="og:description"
+      content="Карта мест, смены, бронирования, платежи, гости, Shell и аналитика собраны в одной системе."
+    />
+    <meta property="og:url" content="https://smartshell.gg/" />
+    <meta property="og:image" content="https://smartshell.gg/og-cover.png" />
+    <meta property="og:locale" content="ru_RU" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#07070c" />
+    <link rel="canonical" href="https://smartshell.gg/" />
+    <title>SmartShell — управление клубом в одном интерфейсе</title>
+    <script>
+      (() => {
+        try {
+          const saved = localStorage.getItem("smartshell-theme");
+          const theme =
+            saved === "light" || saved === "dark"
+              ? saved
+              : matchMedia("(prefers-color-scheme: light)").matches
+                ? "light"
+                : "dark";
+          document.documentElement.dataset.theme = theme;
+          document.documentElement.classList.toggle("dark", theme === "dark");
+          document.documentElement.classList.toggle("light", theme === "light");
+        } catch {
+          document.documentElement.dataset.theme = "dark";
+        }
+      })();
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Manrope:wght@400;500;600;700;800&family=Tektur:wght@500;600;700;800&family=Unbounded:wght@500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <title>SmartShell — управление компьютерным клубом</title>
-    <script type="module" crossorigin src="./assets/index-CF5V9nen.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-De3GfHO7.css">
+    <script type="module" crossorigin src="./assets/index-8Vgefk7v.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-CxPq7KT8.css">
   </head>
   <body>
     <div id="root"></div>
