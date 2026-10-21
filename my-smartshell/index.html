@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Баннер — тестовый переход</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <main class="banner-page">
+    <span class="badge">ТЕСТОВЫЙ БАННЕР · синтетический переход · не боевая реклама</span>
+
+    <!-- Единственный баннер: ссылка на существующую форму стенда с метками перехода.
+         Значения yclid/UTM — синтетические, не доказывают оплаченный клик Директа. -->
+    <a class="banner" id="banner-link"
+       href="https://poc.5-129-211-148.sslip.io/?yclid=poc04-banner-test&amp;utm_source=yandex&amp;utm_medium=cpc&amp;utm_campaign=poc04-banner&amp;utm_content=banner-01&amp;utm_term=under-dojo">
+      <span class="banner-kicker">Компьютерный клуб</span>
+      <span class="banner-title">«PoC Арена» — тестовая заявка</span>
+      <span class="banner-cta">Перейти на форму</span>
+    </a>
+
+    <p class="note">Баннер ведёт на технический стенд <code>poc.5-129-211-148.sslip.io</code>.
+    Переход несёт синтетические <code>yclid</code> и UTM-метки; телефон и секреты в ссылке не передаются.
+    Это имитация рекламного перехода для проверки цепочки «источник → форма», а не реальный клик Директа.</p>
+  </main>
+</body>
+</html>

@@ -1,0 +1,87 @@
+:root {
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  background: #0f1420;
+  color: #e6ebf4;
+}
+
+.banner-page {
+  width: min(720px, 92vw);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.badge {
+  align-self: flex-start;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 6px 10px;
+  border: 1px solid #3b4660;
+  border-radius: 999px;
+  color: #9fb0d0;
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-decoration: none;
+  color: inherit;
+  padding: 32px 28px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #1a2438, #232f4a);
+  border: 1px solid #34405e;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+
+.banner:hover { border-color: #5b6b93; transform: translateY(-2px); }
+.banner:focus-visible { outline: 2px solid #7fa4ff; outline-offset: 3px; }
+
+.banner-kicker {
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #9fb0d0;
+}
+
+.banner-title {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.banner-cta {
+  align-self: flex-start;
+  margin-top: 6px;
+  font-weight: 600;
+  padding: 10px 18px;
+  border-radius: 10px;
+  background: #3f6bff;
+  color: #ffffff;
+}
+
+.note {
+  font-size: 13px;
+  line-height: 1.5;
+  color: #8fa0c0;
+}
+
+.note code {
+  font-family: ui-monospace, "Cascadia Code", "Consolas", monospace;
+  color: #c7d2ea;
+  background: #182036;
+  padding: 1px 6px;
+  border-radius: 6px;
+}
